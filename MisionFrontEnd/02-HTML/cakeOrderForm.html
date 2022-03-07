@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteles Memorables</title>
+</head>
+<body>
+    <header>
+        <img src="./memorables.svg" alt="Pasteles Memorables" width="400px" height="400px">
+        <h1>Pasteles Memorables</h1>
+        <nav>
+
+        </nav>
+    </header>
+    <main>
+        <form >
+            <h3>Solo proporcione los siguientes datos y pronto se procesará su pedido</h3>
+            <div>
+                <label for="nombre">Nombre al que queda el pedido:</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div>
+                <label for="telefono">Número telefónico</label>
+                <input name="telefono" id="telefono" type="tel">
+            </div>
+            <div>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" name="correo" id="correo">
+            </div>
+            <hr>
+            <h4>Indique los detalles de su pedido</h4>
+            <div>
+                <label for="desc" style="display: block;">Descripción general:</label>
+                <Textarea name="desc" id="desc" cols="30" rows="5"></Textarea>
+            </div>
+            <h5>Sabores</h5>
+            <label for="sabor1">Fresa - $200</label>
+            <input type="checkbox" 
+            name="sabor1" id="sabor1" value="Fresa">            
+            <br>
+            <label for="sabor2">Vainilla - $250</label>
+            <input type="checkbox" 
+            name="sabor2" id="sabor2" value="Vainilla">
+            <br>
+            
+            <label for="sabor3">Chocolate - $300</label>
+            <input type="checkbox" 
+            name="sabor3" id="sabor3" value="Chocolate">
+
+            <h5>Decoraciones y adornos</h5>
+            <label for="deco1">Dedicatoria simple - Gratis</label>
+            <input type="checkbox" 
+            name="deco1" id="deco1" value="Dedicatoria">            
+            <br>
+            <label for="deco2">Figura decorada - $100</label>
+            <input type="checkbox" 
+            name="deco2" id="deco2" value="Figura">
+            <br>            
+            <label for="deco3">Adorno de aniz - $50</label>
+            <input type="checkbox" 
+            name="deco3" id="deco3" value="aniz">
+            <br>
+            <button type="reset">Limpiar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
