@@ -16,9 +16,33 @@ p{
     font-weight: 800;
 }
 footer{
+    display:inline-flex;
     background-color: #EDF3FF;
     margin-top: 100px;
-    padding: 20px 50px 10px 50px;
+    width: 100%;
+}
+.overlay-data-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #818DA1;
+}
+.logo-container{
+    display: inline-flex;
+    align-content: center;
+    height: 200px;
+    max-width: 100%;
+}
+.logo-image{
+    margin: 20px;
+    flex-grow: 1;
+    width: 25%;
+    height: auto;
+    object-fit:contain;
+    opacity: 0.25;
+}
+
+.button:hover, button:hover{
+    cursor:pointer;
 }
 .nav-section{
     display: flex;
@@ -47,8 +71,8 @@ footer{
     margin-top: 50px;
 }
 .body1-overlay{
-    position: relative;
-    top: 20px;
+    position: absolute;
+    bottom: 20px;
     background-image: linear-gradient(to right,#fff,#ECF3FD);
 }
 .body2{
@@ -64,9 +88,15 @@ footer{
     font-size: 48;
     font-weight: 800;
 }
-.body-image{
+.body-image1{
     width: fit-content;
     max-width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+.body-image2{
+    width: fit-content;
+    max-width: 40%;
     height: auto;
     object-fit: cover;
 }
@@ -111,17 +141,32 @@ footer{
     border: 3px solid #fafaff;
     margin: 20px 20px 20px 0px;
     padding: 40px;
+    width: 220px;
 }
 .card-gallery{
+    display: inline-flex;    
+    flex-wrap: wrap;
+}
+.card-head{
     display: inline-flex;
-    margin-left: 50px;
+}
+.card-title-container{
+    display: flex;
+    flex-wrap: wrap;
 }
 .card-title{
     color: #244071;
-    font-size: 30;
+    font-size: 22;
     font-weight: bold;
-    display: block;
+    display: flex;
     margin: 10px 0px;
+}
+.card-subtitle{
+    color: #818DA1;
+    font-size: medium;
+    font-weight: 800;
+    display: flex
+    margin 10px 0px;
 }
 .card-body{
     color: #818DA1;
@@ -136,7 +181,7 @@ footer{
 }
 .card-icon{
     display:inline-flex;
-    margin: 5px 0px;
+    margin: 5px 20px 0px 0px;
     border-radius: 5px;
     align-items: center;
     width: 40px;
@@ -182,15 +227,51 @@ footer{
     box-shadow: 5px, #fefefe;
     background-color: #2C4AC5;
     margin: 10px;
-    padding: 10px 25px;
+    padding: 15px 25px;
+    text-align: center;
+}
+.button-secondary{
+    border: none;
+    border-radius: 5px;
+    color: #2C4AC5;
+    box-shadow: 5px, #fefefe;
+    background-color: #F1F5FF;
+    margin: 10px;
+    padding: 15px 25px;
     text-align: center;
 }
 
 .footer-mission{
     width: 20%;
     flex-wrap: wrap;
+    margin: 50px;
 }
 .footer-title{
     color: #2B4AC5;
     font-weight: 900;
+}
+.info-title{
+    color:#244071;
+    font-size: 18px;
+    font-weight: 900;
+}
+.footer-link{
+    color: #6D7A92;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 15;
+    font-weight: 500;
+}
+.footer-info{
+    display: inline-flex;
+    flex-grow: 1;
+    flex-direction: row;
+    margin: 50px;
+    justify-content: flex-end;
+}
+.footer-info-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px 20px;
 }
