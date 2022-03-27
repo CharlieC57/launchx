@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./resources/stylesheet.css">
+    <link rel="stylesheet" href="./pokedex.css">
+    <script src="./pokedex.js"></script>
+</head>
+<body>
+    <main>
+        <div class="topside">
+            <img class="logo" src="./images/pngwing.com.png" alt="Pokemon logo">
+            <div class="controls">
+                <label for="searchbar">Nombre</label>
+                <input id="searchbar" name="searchbar" type="text" placeholder="e.g. Charmander">
+                <button id="searchbutton"class="button-primary" type="button">Buscar</button>
+            </div>
+        </div>
+        <div class="screen">
+            <div class="image-frame">
+                <div class="lateral-frame">                
+                </div>            
+                <img 
+                id="sprite"
+                name="sprite"
+                src="./images/Pokeball-PNG-Photos.png" 
+                alt="pokemon"  
+                class="sprite"      
+                >            
+                <div class="lateral-frame">
+    
+                </div>
+                <div class="general-info">
+                    <div>ID: 
+                        <div id="id" class="info">???</div>
+                    </div><br>
+                    <div >
+                        Nombre: 
+                        <div id="name" class="info">?????</div>
+                    </div><br>
+                    <div >
+                        Peso: 
+                        <div id="weight" class="info">?????</div>
+                    </div><br>
+                    <div >
+                        Altura: 
+                        <div id="height" class="info">?????</div>
+                    </div><br>
+                    <div >
+                        HP: 
+                        <div id="hp" class="info">???</div>
+                    </div><br>
+                    <div>Información: 
+                        <div id="flavor-text"> ¿Quién es ese pokemón? </div>
+                    </div>                
+                </div>
+            </div>            
+        </div>
+        <div class="base-stats">   
+            <div class="graphs">
+                <div class="stat-bar">
+                    ATK: 
+                    <div class="stat-container">
+                        <div class="stat" id="atk">???</div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    DEF: 
+                    <div class="stat-container">
+                        <div id="def" class="stat">???</div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    SP-ATK: 
+                    <div class="stat-container">
+                        <div id="sp-atk" class="stat">???</div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    SP-DEF: 
+                    <div class="stat-container">
+                        <div id="sp-def" class="stat">???</div>
+                    </div>
+                </div>
+                <div class="stat-bar">
+                    VEL: 
+                    <div class="stat-container">
+                        <div id="speed" class="stat">???</div>
+                    </div>
+                </div>
+            </div>
+            <div id="types"></div>
+        </div>
+        
+    </main>
+</body>
+</html>

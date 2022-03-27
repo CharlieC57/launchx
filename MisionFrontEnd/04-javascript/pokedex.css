@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'press_start_2pregular',Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type=text]{
+    background-color: #690;
+    border-radius: 4px;
+    border: 2px solid grey;
+    background-image: url('./images/search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px;
+    color: black;    
+    margin: 20px;
+}
+input[type=text]:focus{
+    background-color: #bbff33;
+    color: black;  
+    outline: none;  
+}
+#types{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen{
+    min-width: 50%;
+}
+.base-stats{
+    height: auto;
+    background-color: #a8a7a4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.stat-container{
+    width: 450px;
+    height: auto;
+    background-color: #ddd;
+
+}
+.stat{
+    background-color: #69f;
+    text-align: center; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    width: 10%;
+    color: white;
+}
+.stat-bar{
+    margin: 10px;
+    justify-content: center;
+}
+.graphs{
+    width: 50%;
+}
+
+.general-info{
+    font-family: 'press_start_2pregular',Roboto, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #690;
+    border-radius: 4px;
+    border: 2px solid grey;
+    padding: 12px 20px;
+    color: black;    
+    margin: 2px;
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 800;
+    max-width: 50%;
+}
+.info{
+    display: inline;
+}
+.topside{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: red;
+    color: white;
+}
+
+.logo{
+    width: 340px;
+    height: 150px;
+    margin: 20px;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+.sprite{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.image-frame{
+    width: 100%;
+    display: flex;
+}
+.lateral-frame{
+    width: 15%;
+    height: auto;
+    background-color: black;
+}
+.button-primary{
+    border: none;
+    color: black;
+    background-color: #6f3;
+    margin: 10px;
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.type{
+    border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+}
+
+.bug{ background-image: radial-gradient(#94A21B 65%,white);}
+.dark{ background-image: radial-gradient(#3E3128 65%,white);}
+.dragon{ background-image: radial-gradient(#725DDA 65%,white);}
+.electric{ background-image: radial-gradient(#E79206 65%,white);}
+.fairy{ background-image: radial-gradient(#F2ABF2 65%,white);}
+.fighting{ background-image: radial-gradient(#7E3622 65%,white);}
+.fire{ background-image: radial-gradient(#CE330F 65%,white);}
+.flying{ background-image: radial-gradient(#5D6FBF 65%,white);}
+.ghost{background-image: radial-gradient(#5F5FAF 65%,white);}
+.grass{background-image: radial-gradient(#6EBF35 65%,white);}
+.ground{background-image: radial-gradient(#CCAB53 65%,white);}
+.ice{background-image: radial-gradient(#6CD2F5 65%,white);}
+.normal{background-image: radial-gradient(#C4BEB6 65%,white);}
+.poison{background-image: radial-gradient(#833C85 65%,white);}
+.psychic{background-image: radial-gradient(#E64176 65%,white);}
+.rock{background-image: radial-gradient(#9D853F 65%,white);}
+.steel{background-image: radial-gradient(#9494A4 65%,white);}
+.water{background-image: radial-gradient(#3292F4 65%,white);}
+
